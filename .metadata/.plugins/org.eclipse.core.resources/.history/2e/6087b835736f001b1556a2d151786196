@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class HomeworkThree {
+
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner (System.in);
+		
+		System.out.print("Type a vowel from the keyboard: ");
+		String input = scnr.nextLine();
+				
+		if (input.equals("vowel")) {
+			System.out.println("OK");
+		} else if(input.equals("!")) {
+//			System.exit(0);
+		}
+	}
+
+}
