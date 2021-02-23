@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class HomeworkOne {
+
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner (System.in);
+		int[] price = new int [20];
+		for(int i = 0; i<3; i++) {	
+			
+			if(i == 1) {
+				System.out.print("Enter the " + (i+1) + "nd number: ");
+
+			}else {
+				System.out.print("Enter the " + (i+1) + "th number: ");
+			}
+			
+			int number = scnr.nextInt();
+		}
+	}
+
+}

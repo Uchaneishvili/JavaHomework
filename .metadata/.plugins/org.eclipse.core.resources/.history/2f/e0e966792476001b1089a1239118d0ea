@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class HomeworkFourth {
+
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner(System.in);
+		int input = scnr.nextInt();
+		int reminder;
+		
+			
+			for(int i = 2; i < input; i++) {
+			input = input / i;
+			System.out.println(input);
+			}
+			
+			
+
+	}
+
+}

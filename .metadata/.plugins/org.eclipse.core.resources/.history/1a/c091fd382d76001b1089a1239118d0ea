@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class HomeworkTwo {
+
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner (System.in);
+		
+		char input = scnr.next().charAt(0);
+		System.out.println(input);
+		
+	}
+
+}

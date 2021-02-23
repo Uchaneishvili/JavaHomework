@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class HomeworkOne {
+
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner (System.in);
+		int[] price = new int [20];
+		int i;
+		int sum = 0;
+		int averages = 0;
+		for(i = 0; i<3; i++) {	
+			
+			if(i == 1) {
+				System.out.print("Enter the " + (i+1) + "nd number: ");
+
+			}else {
+				System.out.print("Enter the " + (i+1) + "th number: ");
+			}
+			
+			price[i] = scnr.nextInt();
+			
+			 sum = sum +  price[i];
+			averages = sum / (i + 1);
+			
+		}
+		
+		for(int j = 0; j < 4; j++) {
+			System.out.println("test");
+		}
+		
+		
+		
+		System.out.println("Sum of the prices: " + sum);
+		System.out.println("Averages of the prices: " + averages);
+		
+
+
+
+	}
+
+}
