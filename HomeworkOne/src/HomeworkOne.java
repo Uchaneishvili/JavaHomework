@@ -1,55 +1,31 @@
-import java.util.Scanner;
 
 public class HomeworkOne {
 
 	public static void main(String[] args) {
-		Scanner scnr = new Scanner (System.in);
-		int[] price = new int [20];
-		int i;
-		int sum = 0;
-		int count = 0;
-		for(i = 0; i<20; i++) {	
-			
-			if(i == 1) {
-				System.out.print("Enter the " + (i+1) + "nd number: ");
-
-			}else {
-				System.out.print("Enter the " + (i+1) + "th number: ");
-			}
-			
-			price[i] = scnr.nextInt();
-			sum = sum +  price[i];
-
-			
-		}
-		scnr.close();
-		System.out.println("Sum of the prices: " + sum);
 		
-		int averages = sum / 20;
-
-		System.out.println("Averages of the prices: " + averages);
+		Car car = new Car ("Audi", "Q7","WBY1Z4C59GV506883","Silver","Black");
 		
-		
-		System.out.println("More than average price: ");
-
-		  for(int j = 0; j < 20; j++) {
-			  if(price[j] > averages) {
-				  System.out.println(price[j]);
-			  }
-		  }
-		  
-		  System.out.println("All value less then 5: ");
-		  
-		  for (int k = 0; k < 20; k ++) {
-			  if(price[k] < 5) {
-					count++;
-					System.out.println(price[k]);
-
-				}
-		  }
+		System.out.println(car.manufacturer);
+		System.out.println(car.model);
+		System.out.println(car.vin);
+		System.out.println(car.color);
+		System.out.println(car.interiorColor);
 
 		
-
+		Car superCar = new Car ();
+		superCar.manufacturer = "Ford";
+		superCar.model = "Fusion";
+		superCar.vin = "5YJ3E1EA1JF155066";
+		superCar.color = "blue";
+		superCar.interiorColor = "Black";
+		
+		System.out.println("");
+		System.out.println(superCar.manufacturer);
+		System.out.println(superCar.model);
+		System.out.println(superCar.vin);
+		System.out.println(superCar.color);
+		System.out.println(superCar.interiorColor);
+		
 		
 		
 
